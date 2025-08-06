@@ -35,7 +35,6 @@ def send_email(message):
     context = ssl.create_default_context()
     email_message = EmailMessage()
     email_message["Subject"] = "Today's Headlines.."
-    email_message["From"] = SENDER
     email_message["To"] = RECEIVER
     email_message.set_content(message)
 
